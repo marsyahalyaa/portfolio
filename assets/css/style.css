@@ -1182,10 +1182,10 @@ p {
 	margin-left: 4px;
 }
 
-.content-box-card .awards-recognitions .awards-item:hover {
+/* .content-box-card .awards-recognitions .awards-item:hover {
 	background-color: transparent;
 	border-color: var(--border);
-}
+} */
 
 .content-box-card .awards-recognitions .awards-item:hover .project-btn span {
 	background-color: var(--background);
