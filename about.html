@@ -247,9 +247,15 @@
                     </div>
                   </div>
                   <div class="awards-recognitions">
-                    <h2 class="main-common-title">Committe Experience
-                    </h2>
-                    <div class="awards-recognitions-main">
+                    <h2 class="main-common-title">Committee Experience</h2>
+                  
+                    <div class="tab-buttons">
+                      <button class="tab-button active" onclick="switchTab(this, 'working')">Working</button>
+                      <button class="tab-button" onclick="switchTab(this, 'organization')">Organization</button>
+                    </div>
+                  
+                    <!-- Working Tab -->
+                    <div id="working" class="tab-content active">
                       <ul class="list-unstyled">
                         <li>
                           <a href="#" class="d-block w-100">
@@ -259,94 +265,20 @@
                                   <img src="assets/img/icons/adobe.svg" alt="adobe">
                                 </div>
                                 <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
+                                  <h4 class="title">Front End Engineer</h4>
+                                  <p class="year">anjay</p>
+                                  <p class="year">Mar 2025 - Present</p>
                                 </div>
                               </div>
                             </div>
                           </a>
                         </li>
-                        <li>
-                          <a href="#" class="d-block w-100">
-                            <div class="awards-item">
-                              <div class="award-name">
-                                <div class="icon">
-                                  <img src="assets/img/icons/adobe.svg" alt="adobe">
-                                </div>
-                                <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="d-block w-100">
-                            <div class="awards-item">
-                              <div class="award-name">
-                                <div class="icon">
-                                  <img src="assets/img/icons/adobe.svg" alt="adobe">
-                                </div>
-                                <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="d-block w-100">
-                            <div class="awards-item">
-                              <div class="award-name">
-                                <div class="icon">
-                                  <img src="assets/img/icons/adobe.svg" alt="adobe">
-                                </div>
-                                <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="d-block w-100">
-                            <div class="awards-item">
-                              <div class="award-name">
-                                <div class="icon">
-                                  <img src="assets/img/icons/adobe.svg" alt="adobe">
-                                </div>
-                                <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="d-block w-100">
-                            <div class="awards-item">
-                              <div class="award-name">
-                                <div class="icon">
-                                  <img src="assets/img/icons/adobe.svg" alt="adobe">
-                                </div>
-                                <div class="text">
-                                  <h4 class="title">Head of Publication and Design Division</h4>
-                                  <p class="year">SIKRAB Committee</p>
-                                  <p class="year">December – January 2023</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
+                      </ul>
+                    </div>
+                  
+                    <!-- Organization Tab -->
+                    <div id="organization" class="tab-content">
+                      <ul class="list-unstyled">
                         <li>
                           <a href="#" class="d-block w-100">
                             <div class="awards-item">
@@ -366,6 +298,7 @@
                       </ul>
                     </div>
                   </div>
+                                  
                   <div class="article-publications">
                     <h2 class="main-common-title">Achievements</h2>
                     <div class="article-publications-main">
@@ -456,6 +389,19 @@
   <script src="assets/js/clipboard.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    function switchTab(button, tabId) {
+      const buttons = document.querySelectorAll(".tab-button");
+      const tabs = document.querySelectorAll(".tab-content");
+  
+      buttons.forEach(btn => btn.classList.remove("active"));
+      tabs.forEach(tab => tab.classList.remove("active"));
+  
+      button.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+  </script>
+  
 </body>
 
 
