@@ -1098,15 +1098,15 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 24px;
 	background-color: var(--background);
 	border-radius: 8px;
 	border: 1px solid transparent;
-	padding: 24px;
-	display: flex;
-	gap: 20px;
-	justify-content: space-between;
-	align-items: center;
-	transition: var(--transision);
+	transition: var(--transition);
+	flex-wrap: nowrap;
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name {
@@ -1118,14 +1118,11 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .icon {
-	width: 40px;
-	height: 40px;
-	background-color: var(--white);
-	border-radius: 8px;
+	flex-shrink: 0;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	transition: var(--transision);
+	justify-content: center;
+	width: 40px;
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .icon img {
@@ -1134,10 +1131,12 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .text .title {
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	color: var(--black);
-	line-height: 1.2em;
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag {
