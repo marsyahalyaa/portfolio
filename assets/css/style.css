@@ -423,7 +423,7 @@ p {
 }
 
 .profile-card .image img {
-	margin-top: 10px;
+	width: 100%;
 }
 
 .profile-card .text {
@@ -678,7 +678,7 @@ p {
 }
 
 .work-experiance-card .work-experiance-slider li .info .text .title {
-	font-size: 30px;
+	font-size: 14px;
 	font-weight: 600;
 	color: var(--black);
 	line-height: 1.5em;
@@ -1247,7 +1247,7 @@ p {
 }
 
 .article-publications-item .text .title {
-	font-size: 24px;
+	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.3em;
 	color: var(--black);
