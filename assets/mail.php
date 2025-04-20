@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
 
-    $recipient = "example.example.com";
+    $recipient = "marsyahalya117@gmail.com";
 
     // Set the email subject.
 
