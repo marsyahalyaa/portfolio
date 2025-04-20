@@ -601,7 +601,7 @@ p {
 
 .work-experiance-card {
 	overflow: hidden;
-	height: 299px;
+	height: 250px;
 }
 
 .work-experiance-card .work-experiance-main {
@@ -1725,10 +1725,10 @@ p {
 }
 
 .portfolio-details-area .more-info-block .more-info-title {
-	font-size: 32px;
+	font-size: 26px;
 	font-weight: 500;
 	line-height: 1.5em;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .portfolio-details-area .more-info-block p {
